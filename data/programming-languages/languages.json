@@ -1,0 +1,16 @@
+{
+    "docs": [
+        {
+            "name": "Python",
+            "type": "General Purpose"
+        },
+        {
+            "name": "JavaScript",
+            "type": "General Purpose"
+        },
+        {
+            "name": "HTML",
+            "type": "Web Lang"
+        }
+    ]
+}
