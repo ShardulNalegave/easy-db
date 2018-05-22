@@ -1,1 +1,1 @@
-{"docs": [{"name": "Python", "type": "General Purpose"}, {"name": "JS", "type": "General Purpose", "full_form": "JavaScript"}]}
+{"docs": [{"name": "Python", "type": "General Purpose", "remark": "My Favorite"}, {"name": "JS", "type": "General Purpose", "full_form": "JavaScript", "remark": "My Favorite"}]}

@@ -109,3 +109,41 @@ class collectionClass:
                         file.write(JSON_To_Write)
 
         self.delete_many = delete_many
+
+        def update_many(query, newDocQueries):
+
+            i = -1
+
+            for doc in parsedJSON:
+
+                i += 1
+
+                lenQueries = len(list(query))
+                matches = 0
+
+                for key, value in query.items():
+
+                    try:
+
+                        if doc[key] == value:
+                            matches += 1
+                        else:
+                            break
+
+                    except KeyError:
+                        continue
+
+                if matches == lenQueries:
+
+                    for key, value in newDocQueries.items():
+
+                        parsedJSON[i][key] = value
+                        JSON_To_Write = json.loads(
+                            open("./data/{}/{}".format(dbName, collName), "r").read())
+                        JSON_To_Write["docs"] = parsedJSON
+                        JSON_To_Write = json.dumps(JSON_To_Write)
+
+                        with open("./data/{}/{}".format(dbName, collName), "w") as file:
+                            file.write(JSON_To_Write)
+
+        self.update_many = update_many

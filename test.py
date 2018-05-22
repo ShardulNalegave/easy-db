@@ -27,3 +27,8 @@ programmingLanguages.delete_many({
 })
 
 print(programmingLanguages.get())
+
+programmingLanguages.update_many({"type": "General Purpose"}, {
+                                 "remark": "My Favorite"})
+
+print(programmingLanguages.get())
