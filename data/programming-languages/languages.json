@@ -10,7 +10,8 @@
         },
         {
             "name": "HTML",
-            "type": "Web Lang"
+            "type": "Web Lang",
+            "full_form": "Hyper Text Markup Language"
         }
     ]
 }
