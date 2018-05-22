@@ -19,9 +19,8 @@ class EasyDB:
                         return collectionClass(dbName, collName + ".json")
                     else:
 
-                        open("./data/{}/{}.json".format(dbName, collName), "w").write("""{
-    "docs": []
-}""")
+                        open("./data/{}/{}.json".format(dbName, collName),
+                             "w").write('{ "docs": [] }')
 
                         return collectionClass(dbName, collName + ".json")
 
@@ -37,9 +36,8 @@ class EasyDB:
                         return collectionClass(dbName, collName + ".json")
                     else:
 
-                        open("./data/{}/{}.json".format(dbName, collName), "w").write("""{
-    "docs": []
-}""")
+                        open("./data/{}/{}.json".format(dbName, collName),
+                             "w").write('{ "docs": [] }')
 
                         return collectionClass(dbName, collName + ".json")
 

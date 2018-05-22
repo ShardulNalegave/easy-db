@@ -19,5 +19,11 @@ programmingLanguages = dbms.use(
 
 print(programmingLanguages.get())
 print(programmingLanguages.doc({
-    "full_form": "Hyper Text Markup Language"
+    "type": "General Purpose"
 }))
+
+programmingLanguages.delete_many({
+    "full_form": "Hyper Text Markup Language"
+})
+
+print(programmingLanguages.get())

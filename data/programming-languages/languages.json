@@ -1,17 +1,1 @@
-{
-    "docs": [
-        {
-            "name": "Python",
-            "type": "General Purpose"
-        },
-        {
-            "name": "JavaScript",
-            "type": "General Purpose"
-        },
-        {
-            "name": "HTML",
-            "type": "Web Lang",
-            "full_form": "Hyper Text Markup Language"
-        }
-    ]
-}
+{"docs": [{"name": "Python", "type": "General Purpose"}, {"name": "JS", "type": "General Purpose", "full_form": "JavaScript"}]}

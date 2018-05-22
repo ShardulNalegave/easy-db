@@ -77,7 +77,7 @@ class collectionClass:
 
         def delete_many(query):
 
-            i = 0
+            i = -1
 
             for doc in parsedJSON:
 
@@ -100,5 +100,12 @@ class collectionClass:
 
                 if matches == lenQueries:
                     del parsedJSON[i]
+                    JSON_To_Write = json.loads(
+                        open("./data/{}/{}".format(dbName, collName), "r").read())
+                    JSON_To_Write["docs"] = parsedJSON
+                    JSON_To_Write = json.dumps(JSON_To_Write)
+
+                    with open("./data/{}/{}".format(dbName, collName), "w") as file:
+                        file.write(JSON_To_Write)
 
         self.delete_many = delete_many
